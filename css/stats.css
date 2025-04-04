@@ -1,0 +1,241 @@
+/* Hero Section */
+.hero {
+    background: linear-gradient(135deg, var(--primary-color) 0%, #520059 50%, #963cff 100%);
+    margin-top: var(--nav-height);
+    padding: 5rem 2rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: radial-gradient(circle at center, rgba(150, 60, 255, 0.2) 0%, transparent 70%);
+    pointer-events: none;
+}
+
+.hero::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('data:image/svg+xml,<svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><circle cx="2" cy="2" r="1" fill="rgba(255,255,255,0.1)"/></svg>') repeat;
+    opacity: 0.5;
+    pointer-events: none;
+}
+
+.hero-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+    text-align: center;
+}
+
+.hero h1 {
+    color: var(--white);
+    font-size: 3.5rem;
+    font-weight: 800;
+    margin: 0;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    position: relative;
+    letter-spacing: -0.02em;
+}
+
+.hero h1::after {
+    content: '';
+    display: block;
+    width: 80px;
+    height: 4px;
+    background: var(--accent-color);
+    margin: 1rem auto 0;
+    border-radius: 2px;
+}
+
+.hero p {
+    color: var(--white);
+    font-size: 1.2rem;
+    margin-top: 1rem;
+    opacity: 0.9;
+}
+
+/* Stats Section */
+.stats-section {
+    padding: 4rem 2rem;
+    background: #f8fafc;
+}
+
+.stats-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    gap: 2rem;
+}
+
+.stats-category {
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.stats-category:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+}
+
+.stats-category h3 {
+    background: linear-gradient(135deg, #6b46c1, #805ad5);
+    color: #fff;
+    padding: 1.25rem 2rem;
+    margin: 0;
+    font-size: 1.75rem;
+    font-weight: 700;
+    text-align: center;
+    letter-spacing: -0.01em;
+    position: relative;
+}
+
+.stats-category h3::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 3px;
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 2px;
+}
+
+.stats-table-container {
+    padding: 2rem;
+}
+
+/* Stats Table */
+.stats-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.stats-table th,
+.stats-table td {
+    padding: 1rem;
+    text-align: left;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+.stats-table th {
+    font-weight: 600;
+    color: #4a5568;
+    background: #f7fafc;
+    position: sticky;
+    top: 0;
+}
+
+.stats-table tr:hover {
+    background: #f8fafc;
+}
+
+.stats-table .rank {
+    font-weight: 600;
+    color: #4a5568;
+    text-align: center;
+    width: 60px;
+}
+
+.stats-table .player-name {
+    font-weight: 600;
+    color: #2d3748;
+}
+
+.stats-table .team-name {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.stats-table .team-logo {
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
+}
+
+.stats-table .stat-value {
+    font-weight: 600;
+    color: #6b46c1;
+    text-align: center;
+}
+
+.stats-table .matches {
+    text-align: center;
+    color: #4a5568;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero {
+        padding: 4rem 1.5rem;
+    }
+
+    .hero h1 {
+        font-size: 2.75rem;
+    }
+
+    .stats-section {
+        padding: 3rem 1rem;
+    }
+
+    .stats-category h3 {
+        font-size: 1.5rem;
+        padding: 1rem 1.5rem;
+    }
+
+    .stats-table-container {
+        padding: 1rem;
+        overflow-x: auto;
+    }
+
+    .stats-table th,
+    .stats-table td {
+        padding: 0.75rem;
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero {
+        padding: 3rem 1rem;
+    }
+
+    .hero h1 {
+        font-size: 2.25rem;
+    }
+
+    .stats-section {
+        padding: 2rem 0.75rem;
+    }
+
+    .stats-category h3 {
+        font-size: 1.25rem;
+        padding: 0.75rem 1rem;
+    }
+
+    .stats-table th,
+    .stats-table td {
+        padding: 0.5rem;
+        font-size: 0.85rem;
+    }
+
+    .stats-table .team-logo {
+        width: 20px;
+        height: 20px;
+    }
+} 

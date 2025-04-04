@@ -1,0 +1,268 @@
+/* Knockout Hero Section */
+.hero {
+    background: linear-gradient(135deg, var(--primary-color) 0%, #520059 50%, #963cff 100%);
+    margin-top: var(--nav-height);
+    padding: 5rem 2rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: radial-gradient(circle at center, rgba(150, 60, 255, 0.2) 0%, transparent 70%);
+    pointer-events: none;
+}
+
+.hero::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('data:image/svg+xml,<svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><circle cx="2" cy="2" r="1" fill="rgba(255,255,255,0.1)"/></svg>') repeat;
+    opacity: 0.5;
+    pointer-events: none;
+}
+
+.hero-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+    text-align: center;
+}
+
+.hero h1 {
+    color: var(--white);
+    font-size: 3.5rem;
+    font-weight: 800;
+    margin: 0;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    position: relative;
+    letter-spacing: -0.02em;
+}
+
+.hero h1::after {
+    content: '';
+    display: block;
+    width: 80px;
+    height: 4px;
+    background: var(--accent-color);
+    margin: 1rem auto 0;
+    border-radius: 2px;
+}
+
+.hero p {
+    color: var(--white);
+    font-size: 1.2rem;
+    margin-top: 1rem;
+    opacity: 0.9;
+}
+
+/* Knockout Stage Section */
+.knockout-stage {
+    padding: 4rem 2rem;
+    margin-bottom: 4rem;
+    background: #f8fafc;
+}
+
+.tournament-bracket {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.round {
+    margin-bottom: 4rem;
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.round:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+}
+
+.round h2 {
+    background: linear-gradient(135deg, #6b46c1, #805ad5);
+    color: #fff;
+    padding: 1.25rem 2rem;
+    margin: 0;
+    font-size: 1.75rem;
+    font-weight: 700;
+    text-align: center;
+    letter-spacing: -0.01em;
+    position: relative;
+}
+
+.round h2::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 3px;
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 2px;
+}
+
+.matches {
+    padding: 2.5rem;
+}
+
+.match-pair {
+    margin-bottom: 2rem;
+}
+
+.match-pair:last-child {
+    margin-bottom: 0;
+}
+
+.match {
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+    transition: all 0.3s ease;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.match:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+}
+
+.team {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    flex: 1;
+}
+
+.team img {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+}
+
+.match:hover .team img {
+    transform: scale(1.05);
+}
+
+.team-name {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #1a202c;
+}
+
+.match-score {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #2d3748;
+    padding: 0.5rem 1.5rem;
+    background: #f7fafc;
+    border-radius: 8px;
+    min-width: 100px;
+    text-align: center;
+    margin: 0 2rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero {
+        padding: 4rem 1.5rem;
+    }
+
+    .hero h1 {
+        font-size: 2.75rem;
+    }
+
+    .knockout-stage {
+        padding: 3rem 1rem;
+    }
+
+    .round {
+        margin-bottom: 2.5rem;
+    }
+
+    .round h2 {
+        font-size: 1.5rem;
+        padding: 1rem 1.5rem;
+    }
+
+    .matches {
+        padding: 1.5rem;
+    }
+
+    .match {
+        padding: 1.5rem;
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .team {
+        justify-content: center;
+    }
+
+    .match-score {
+        font-size: 1.25rem;
+        padding: 0.4rem 0.75rem;
+        min-width: 80px;
+        margin: 1rem 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero {
+        padding: 3rem 1rem;
+    }
+
+    .hero h1 {
+        font-size: 2.25rem;
+    }
+
+    .knockout-stage {
+        padding: 2rem 0.75rem;
+    }
+
+    .round h2 {
+        font-size: 1.25rem;
+        padding: 0.75rem 1rem;
+    }
+
+    .matches {
+        padding: 1rem;
+    }
+
+    .match {
+        padding: 1rem;
+    }
+
+    .team img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .team-name {
+        font-size: 1rem;
+    }
+
+    .match-score {
+        font-size: 1.1rem;
+        padding: 0.3rem 0.5rem;
+        min-width: 60px;
+    }
+}

@@ -1,0 +1,502 @@
+/* Hero Section */
+.awards-hero {
+    background: linear-gradient(135deg, var(--primary-color) 0%, #520059 50%, #963cff 100%);
+    margin-top: var(--nav-height);
+    padding: 3rem 2rem;
+    position: relative;
+    overflow: hidden;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    margin-bottom: 2rem;
+}
+
+/* Add sparkle animation to hero */
+.awards-hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: 
+        radial-gradient(circle at center, rgba(150, 60, 255, 0.2) 0%, transparent 70%),
+        url('data:image/svg+xml,<svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M10 1l2.5 5 5.5.5-4 4 1 5.5L10 13l-5 3.5 1-5.5-4-4 5.5-.5L10 1z" fill="rgba(255,255,255,0.1)"/></svg>') 0 0/80px 80px;
+    pointer-events: none;
+    animation: sparkle 8s linear infinite;
+}
+
+@keyframes sparkle {
+    0% {
+        background-position: 0% 0%;
+        opacity: 0.3;
+    }
+    50% {
+        opacity: 0.6;
+    }
+    100% {
+        background-position: 100% 100%;
+        opacity: 0.3;
+    }
+}
+
+.awards-hero::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('data:image/svg+xml,<svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><circle cx="2" cy="2" r="1" fill="rgba(255,255,255,0.1)"/></svg>') repeat;
+    opacity: 0.5;
+    pointer-events: none;
+}
+
+.awards-hero-content {
+    max-width: 900px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    padding: 0 1.5rem;
+}
+
+.awards-hero-content h1 {
+    color: var(--white);
+    font-size: 2.5rem;
+    font-weight: 800;
+    margin: 0;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    position: relative;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+}
+
+.awards-hero-content h1::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 3px;
+    background: var(--accent-color);
+    margin: 0.75rem auto 0;
+    border-radius: 2px;
+}
+
+.awards-hero-content p {
+    font-size: 1.3rem;
+    font-weight: 500;
+    margin-top: 1rem;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+    opacity: 0.95;
+}
+
+/* Awards Section */
+.awards-section {
+    padding: 4rem 2rem;
+    margin-bottom: 4rem;
+    background: #f8fafc;
+}
+
+.awards-container {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.award-category {
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+    padding: 2rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    margin-bottom: 2rem;
+    position: relative;
+    animation: elevate 4s ease-in-out infinite;
+    text-align: center;
+}
+
+@keyframes elevate {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-5px);
+    }
+}
+
+.award-category:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+}
+
+.award-category h3 {
+    color: #2d3748;
+    margin-bottom: 1.25rem;
+    font-size: 1.4rem;
+    font-weight: 700;
+    letter-spacing: -0.01em;
+    position: relative;
+    padding-bottom: 0.75rem;
+    text-align: center;
+}
+
+.award-category h3::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50px;
+    height: 3px;
+    background: var(--accent-color);
+    border-radius: 2px;
+}
+
+.award-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    justify-items: center;
+    align-items: center;
+}
+
+.award-card {
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+    transition: all 0.3s ease;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    max-width: 300px;
+}
+
+/* Team logo/image styles */
+.award-card img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin: 0 auto 1rem;
+    background-color: #f8fafc;
+    display: block;
+}
+
+.team-logo {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+    margin: 0 auto 1rem;
+    display: block;
+}
+
+/* Trophy shine effect - now continuous */
+.award-card::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: linear-gradient(
+        45deg,
+        transparent 0%,
+        rgba(255, 255, 255, 0) 30%,
+        rgba(255, 255, 255, 0.4) 50%,
+        rgba(255, 255, 255, 0) 70%,
+        transparent 100%
+    );
+    transform: rotate(-45deg);
+    animation: shine 5s ease-in-out infinite;
+    pointer-events: none;
+}
+
+@keyframes shine {
+    0% {
+        transform: translateX(-100%) rotate(-45deg);
+        opacity: 0;
+    }
+    50% {
+        opacity: 0.5;
+    }
+    100% {
+        transform: translateX(100%) rotate(-45deg);
+        opacity: 0;
+    }
+}
+
+.award-icon {
+    font-size: 2.5rem;
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+    animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+.award-title {
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    position: relative;
+    background: linear-gradient(45deg, #2d3748 0%, #947000 50%, #FFD700 100%);
+    background-size: 200% auto;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: shimmer 3s linear infinite;
+    text-align: center;
+    width: 100%;
+}
+
+@keyframes shimmer {
+    0% {
+        background-position: 0% center;
+    }
+    100% {
+        background-position: 200% center;
+    }
+}
+
+.award-recipient {
+    font-size: 1.1rem;
+    color: var(--accent-color);
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    position: relative;
+    display: block;
+    animation: glow 2s ease-in-out infinite;
+    text-align: center;
+    width: 100%;
+}
+
+@keyframes glow {
+    0%, 100% {
+        text-shadow: 0 0 0 rgba(255, 40, 130, 0);
+    }
+    50% {
+        text-shadow: 0 0 10px rgba(255, 40, 130, 0.3);
+    }
+}
+
+.award-details {
+    font-size: 0.9rem;
+    color: #4a5568;
+    line-height: 1.4;
+    text-align: center;
+    width: 100%;
+}
+
+.award-stats {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    margin-top: 1rem;
+    width: 100%;
+    padding-top: 1rem;
+    border-top: 1px solid rgba(0, 0, 0, 0.05);
+    justify-items: center;
+    align-items: center;
+}
+
+.stat-item {
+    text-align: center;
+    width: 100%;
+}
+
+.stat-value {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: var(--primary-color);
+    position: relative;
+    display: inline-block;
+}
+
+/* Continuous pulse effect for stat values */
+.stat-value::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    background: var(--primary-color);
+    border-radius: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    opacity: 0;
+    z-index: -1;
+    animation: pulse 2s ease-out infinite;
+}
+
+@keyframes pulse {
+    0% {
+        transform: translate(-50%, -50%) scale(0);
+        opacity: 0.5;
+    }
+    100% {
+        transform: translate(-50%, -50%) scale(2);
+        opacity: 0;
+    }
+}
+
+.stat-label {
+    font-size: 0.8rem;
+    color: #4a5568;
+    margin-top: 0.25rem;
+}
+
+/* Add confetti animation */
+.award-category::after {
+    content: '🎉';
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    font-size: 1.5rem;
+    opacity: 0;
+    transform: rotate(0deg);
+    transition: all 0.3s ease;
+}
+
+.award-category:hover::after {
+    opacity: 1;
+    animation: celebrate 1s ease-in-out infinite;
+}
+
+@keyframes celebrate {
+    0%, 100% {
+        transform: rotate(0deg) scale(1);
+    }
+    50% {
+        transform: rotate(15deg) scale(1.2);
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .awards-hero {
+        padding: 2.5rem 1.5rem;
+    }
+
+    .awards-hero-content h1 {
+        font-size: 2rem;
+    }
+
+    .awards-hero-content p {
+        font-size: 1.1rem;
+    }
+
+    .awards-section {
+        padding: 3rem 1.5rem;
+    }
+
+    .award-category {
+        padding: 1.5rem;
+    }
+
+    .award-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .award-card {
+        padding: 1.25rem;
+    }
+
+    .award-icon {
+        font-size: 2.25rem;
+    }
+
+    .award-title {
+        font-size: 1.1rem;
+    }
+
+    .award-recipient {
+        font-size: 1rem;
+    }
+
+    .award-card img {
+        width: 100px;
+        height: 100px;
+    }
+    
+    .team-logo {
+        width: 60px;
+        height: 60px;
+    }
+}
+
+@media (max-width: 480px) {
+    .awards-hero {
+        padding: 2rem 1rem;
+    }
+
+    .awards-hero-content h1 {
+        font-size: 1.75rem;
+    }
+
+    .awards-hero-content p {
+        font-size: 1rem;
+    }
+
+    .awards-section {
+        padding: 2rem 1rem;
+    }
+
+    .award-category {
+        padding: 1.25rem;
+    }
+
+    .award-card {
+        padding: 1rem;
+    }
+
+    .award-icon {
+        font-size: 2rem;
+    }
+
+    .award-title {
+        font-size: 1rem;
+    }
+
+    .award-recipient {
+        font-size: 0.95rem;
+    }
+
+    .award-details {
+        font-size: 0.85rem;
+    }
+
+    .stat-value {
+        font-size: 1.1rem;
+    }
+
+    .stat-label {
+        font-size: 0.75rem;
+    }
+
+    .award-card img {
+        width: 70px;
+        height: 70px;
+    }
+    
+    .team-logo {
+        width: 50px;
+        height: 50px;
+    }
+}
