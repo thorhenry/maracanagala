@@ -19,16 +19,16 @@ window.fixturesData = [
                 homeTeam: 'Jinja',
                 awayTeam: 'Wakiso',
                 venue: 'Maracanã Stadium',
-                status: 'upcoming',
+                status: 'completed',
                 homeScore: 0,
-                awayScore: 0
+                awayScore: 1
             },
             {
                 homeTeam: 'Arua',
                 awayTeam: 'Mbarara',
                 venue: 'Maracanã Stadium',
-                status: 'upcoming',
-                homeScore: 0,
+                status: 'completed',
+                homeScore: 1,
                 awayScore: 0
             }
         ]
@@ -40,16 +40,16 @@ window.fixturesData = [
                 homeTeam: 'Masaka',
                 awayTeam: 'Gulu',
                 venue: 'Maracanã Stadium',
-                status: 'upcoming',
-                homeScore: 0,
+                status: 'completed',
+                homeScore: 2,
                 awayScore: 0
             },
             {
                 homeTeam: 'Mbale',
                 awayTeam: 'Kabale',
                 venue: 'Maracanã Stadium',
-                status: 'upcoming',
-                homeScore: 0,
+                status: 'completed',
+                homeScore: 1,
                 awayScore: 0
             }
         ]
@@ -61,16 +61,16 @@ window.fixturesData = [
                 homeTeam: 'Jinja',
                 awayTeam: 'Arua',
                 venue: 'Maracanã Stadium',
-                status: 'upcoming',
+                status: 'completed',
                 homeScore: 0,
-                awayScore: 0
+                awayScore: 2
             },
             {
                 homeTeam: 'Mbarara',
                 awayTeam: 'Wakiso',
                 venue: 'Maracanã Stadium',
-                status: 'upcoming',
-                homeScore: 0,
+                status: 'comleted',
+                homeScore: 2,
                 awayScore: 0
             }
         ]
