@@ -2,7 +2,7 @@
 const awardsData = {
     tournamentWinner: {
         team: 'Wakiso',
-        teamLogo: 'images/club-logos/tbd.svg',
+        teamLogo: 'images/club-logos/wakiso.svg',
         stats: {
             wins: 6,
             goals: 8,
