@@ -1,13 +1,13 @@
 // Awards Data
 const awardsData = {
     tournamentWinner: {
-        team: 'TBD',
+        team: 'Wakiso',
         teamLogo: 'images/club-logos/tbd.svg',
         stats: {
-            wins: null,
-            goals: null,
-            points: null,
-            goalDiff: null
+            wins: 4,
+            goals: 5,
+            points: 12,
+            goalDiff: -1
         }
     },
     playerOfTheTournament: {
