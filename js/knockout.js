@@ -28,9 +28,9 @@ const knockoutData = {
         id: 'final',
         homeTeam: 'Wakiso',
         awayTeam: 'Mbale',
-        homeScore: null,
-        awayScore: null,
-        status: 'upcoming',
+        homeScore: 2,
+        awayScore: 0,
+        status: 'completed',
         date: '2025-04-06',
         time: '19:00',
         stadium: 'Maracaná Stadium'
