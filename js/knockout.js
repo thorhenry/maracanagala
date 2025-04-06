@@ -16,9 +16,9 @@ const knockoutData = {
             id: 'sf2',
             homeTeam: 'Arua',  // 2nd in table
             awayTeam: 'Wakiso',  // 4th in table
-            homeScore: null,
-            awayScore: null,
-            status: 'upcoming',
+            homeScore: 0,
+            awayScore: 1,
+            status: 'completed',
             date: '2025-04-06',
             time: '18:00',
             stadium: 'Maracaná Stadium'
@@ -26,8 +26,8 @@ const knockoutData = {
     ],
     final: {
         id: 'final',
-        homeTeam: 'TBD',
-        awayTeam: 'TBD',
+        homeTeam: 'Wakiso',
+        awayTeam: 'Mbale',
         homeScore: null,
         awayScore: null,
         status: 'upcoming',
