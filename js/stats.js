@@ -59,7 +59,7 @@ const statsData = {
         { rank: 30, name: 'Tony', team: 'Jinja', assists: 1, matches: 5},
         { rank: 31, name: 'Ronnie', team: 'Mbarara', assists: 1, matches: 6},
         { rank: 32, name: 'Arafa', team: 'Wakiso', assists: 1, matches: 6},
-        { rank: 33, name: 'Martin', team: 'Wakiso', assists: 1, matches: 5},
+        { rank: 33, name: 'Martin', team: 'Wakiso', assists: 1, matches: 5}
        
         
     ],
