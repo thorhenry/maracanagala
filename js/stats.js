@@ -1,15 +1,15 @@
 // Player Statistics Data
 const statsData = {
     topScorers: [
-        // { rank: 1, name: 'Afande', team: 'Mbarara', goals: 18, matches: 15 },
-        // { rank: 2, name: 'Matayo', team: 'Wakiso', goals: 15, matches: 14 },
-        // { rank: 3, name: 'Denis', team: 'Arua', goals: 14, matches: 15 },
-        // { rank: 4, name: 'Jemmy', team: 'Kabale', goals: 13, matches: 15 },
-        // { rank: 5, name: 'Dejango', team: 'Mbale', goals: 12, matches: 14 },
-        // { rank: 6, name: 'Kagame', team: 'Masaka', goals: 11, matches: 15 },
-        // { rank: 7, name: 'Javan', team: 'Jinja', goals: 10, matches: 13 },
-        // { rank: 8, name: 'Tony', team: 'Mbarara', goals: 9, matches: 15 },
-        // { rank: 9, name: 'Kevin Barbs', team: 'Wakiso', goals: 9, matches: 14 },
+         { rank: 1, name: 'Antony', team: 'Mbarara', goals: 2, matches: 2 },
+         { rank: 2, name: 'Uncle Mo', team: 'Wakiso', goals: 1, matches: 2 },
+         { rank: 3, name: 'Ivan', team: 'Mbale', goals: 1, matches: 2 },
+         { rank: 4, name: 'Ken', team: 'Masaka', goals: 1, matches: 1 },
+         { rank: 5, name: 'Kelvin', team: 'Masaka', goals: 1, matches: 1 },
+         { rank: 6, name: 'Felix', team: 'Arua', goals: 1, matches: 2 },
+         { rank: 7, name: 'Alex', team: 'Arua', goals: 1, matches: 1 },
+         { rank: 8, name: 'denis', team: 'Arua', goals: 1, matches: 1 },
+         { rank: 9, name: 'Malcom', team: 'Mbarara', goals: 1, matches: 1 },
         // { rank: 10, name: 'Mark O', team: 'Arua', goals: 8, matches: 15 }
     ],
     topAssists: [
