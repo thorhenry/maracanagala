@@ -5,9 +5,9 @@ const knockoutData = {
             id: 'sf1',
             homeTeam: 'Mbale', // 1st in table
             awayTeam: 'Masaka',    // 3rd in table
-            homeScore: 0,
+            homeScore: 1,
             awayScore: 0,
-            status: 'live',
+            status: 'completed',
             date: '2025-04-06',
             time: '17:00',
             stadium: 'Maracaná Stadium'
