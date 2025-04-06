@@ -11,15 +11,15 @@ const awardsData = {
         }
     },
     playerOfTheTournament: {
-        winner: 'TBD',
-        team: 'TBD',
-        teamLogo: 'images/club-logos/tbd.svg',
+        winner: 'Moze',
+        team: 'Wakiso',
+        teamLogo: 'images/club-logos/wakiso.svg',
         photo: 'images/tbd.svg',
         stats: {
-            goals: null,
-            assists: null,
-            games: null,
-            motm: null
+            goals: 0,
+            assists: 0,
+            games: 7,
+            motm: 4
         }
     },
     goalkeeperOfTheTournament: {
