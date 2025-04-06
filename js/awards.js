@@ -4,10 +4,10 @@ const awardsData = {
         team: 'Wakiso',
         teamLogo: 'images/club-logos/tbd.svg',
         stats: {
-            wins: 4,
-            goals: 5,
-            points: 12,
-            goalDiff: -1
+            wins: 6,
+            goals: 8,
+            points: 18,
+            goalDiff: 1
         }
     },
     playerOfTheTournament: {
