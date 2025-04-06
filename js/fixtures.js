@@ -250,9 +250,9 @@ window.fixturesData = [
                 homeTeam: 'Mbale',
                 awayTeam: 'Wakiso',
                 venue: 'Maracanã Stadium',
-                status: 'live',
+                status: 'completed',
                 homeScore: 0,
-                awayScore: 0
+                awayScore: 1
             },
             {
                 homeTeam: 'Mbarara',
