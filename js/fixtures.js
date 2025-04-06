@@ -230,8 +230,8 @@ window.fixturesData = [
                 awayTeam: 'Arua',
                 venue: 'Maracanã Stadium',
                 status: 'completed',
-                homeScore: 2,
-                awayScore: 0
+                homeScore: 0,
+                awayScore: 2
             },
             {
                 homeTeam: 'Jinja',
