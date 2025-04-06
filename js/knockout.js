@@ -3,8 +3,8 @@ const knockoutData = {
     semiFinals: [
         {
             id: 'sf1',
-            homeTeam: 'TBD', // 1st in table
-            awayTeam: 'TBD',    // 3rd in table
+            homeTeam: 'Mbale', // 1st in table
+            awayTeam: 'Masaka',    // 3rd in table
             homeScore: null,
             awayScore: null,
             status: 'upcoming',
@@ -14,8 +14,8 @@ const knockoutData = {
         },
         {
             id: 'sf2',
-            homeTeam: 'TBD',  // 2nd in table
-            awayTeam: 'TBD',  // 4th in table
+            homeTeam: 'Arua',  // 2nd in table
+            awayTeam: 'Wakiso',  // 4th in table
             homeScore: null,
             awayScore: null,
             status: 'upcoming',
