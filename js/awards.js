@@ -23,15 +23,15 @@ const awardsData = {
         }
     },
     goalkeeperOfTheTournament: {
-        winner: 'TBD',
-        team: 'TBD',
-        teamLogo: 'images/club-logos/tbd.svg',
+        winner: 'Hakim',
+        team: 'Mbale',
+        teamLogo: 'images/club-logos/mbale.svg',
         photo: 'images/tbd.svg',
         stats: {
-            cleanSheets: null,
-            saves: null,
-            games: null,
-            savePercentage: null
+            cleanSheets: 6,
+            saves: 23,
+            games: 9,
+            savePercentage: 82
         }
     }
 };
