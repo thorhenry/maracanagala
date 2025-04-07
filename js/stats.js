@@ -64,13 +64,13 @@ const statsData = {
         
     ],
     cleanSheets: [
-        // { rank: 1, name: 'Amon', team: 'Mbarara', cleanSheets: 8, matches: 15 },
-        // { rank: 2, name: 'Uncle Mo', team: 'Wakiso', cleanSheets: 7, matches: 14 },
-        // { rank: 3, name: 'Aaron', team: 'Arua', cleanSheets: 7, matches: 15 },
-        // { rank: 4, name: 'Aziz', team: 'Kabale', cleanSheets: 6, matches: 15 },
-        // { rank: 5, name: 'Allan G', team: 'Mbale', cleanSheets: 5, matches: 14 },
-        // { rank: 6, name: 'Barney', team: 'Masaka', cleanSheets: 5, matches: 15 },
-        // { rank: 7, name: 'Dario', team: 'Jinja', cleanSheets: 4, matches: 13 },
+        { rank: 1, name: 'Nfumu', team: 'Arua', cleanSheets: 6, matches: 8 },
+        { rank: 2, name: 'Hakim', team: 'Mbale', cleanSheets: 6, matches: 9 },
+        { rank: 3, name: 'Eddy', team: 'Wakiso', cleanSheets: 5, matches: 9 },
+        { rank: 4, name: 'Mico', team: 'Jinja', cleanSheets: 3, matches: 7 },
+        { rank: 5, name: 'Lwanga', team: 'Gulu', cleanSheets: 2, matches: 7 },
+        { rank: 6, name: 'Van', team: 'Mbarara', cleanSheets: 2, matches: 7 },
+        { rank: 7, name: 'Onana', team: 'Kabale', cleanSheets: 2, matches: 8 }
         // { rank: 8, name: 'Martin', team: 'Mbarara', cleanSheets: 4, matches: 14 },
         // { rank: 9, name: 'Wasswa', team: 'Wakiso', cleanSheets: 3, matches: 15 },
         // { rank: 10, name: 'Victor', team: 'Arua', cleanSheets: 3, matches: 14 }
